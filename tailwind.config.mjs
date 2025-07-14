@@ -8,12 +8,12 @@ export default {
           cream: '#F5F5F0',
           sand: '#E5E5DC',
           stone: '#2C2C2C',
-          charcoal: '#1A1A1A'
+          charcoal: '#388659'
         }
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
-        display: ['Cormorant Garamond', 'serif']
+        display: ["Italianno", "cursive"]
       }
     }
   }
