@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<Layout title="About - MINIM">
+  <main>
+    <PageHeader 
+      title="Our Story" 
+      subtitle="A journey through elegance and sustainable fashion"
+    />
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="relative aspect-[4/5]">
+          <img 
+            src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=987"
+            alt="Atelier"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="space-y-6">
+          <h2 class="font-display text-3xl">Crafting Timeless Pieces</h2>
+          <p class="font-sans leading-relaxed">
+            Founded in 2020, MINIM was born from a passion for minimalist design and sustainable fashion. Our commitment to quality craftsmanship and ethical production sets us apart in the industry.
+          </p>
+          <p class="font-sans leading-relaxed">
+            Each piece in our collection is thoughtfully designed and meticulously crafted using the finest materials, ensuring both longevity and style that transcends seasons.
+          </p>
+          <div class="grid grid-cols-3 gap-8 pt-8">
+            <div>
+              <p class="font-display text-3xl mb-2">50+</p>
+              <p class="font-sans text-sm">Artisan Partners</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl mb-2">100%</p>
+              <p class="font-sans text-sm">Sustainable Materials</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl mb-2">12</p>
+              <p class="font-sans text-sm">Collections</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="font-display text-3xl mb-6">Our Values</h2>
+        <p class="font-sans mb-16">
+          We believe in creating fashion that respects both people and planet, without compromising on style.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center p-8 rounded-sm bg-white/50 blur-40">
+          <h3 class="font-display text-xl mb-4">Sustainability</h3>
+          <p class="font-sans text-sm leading-relaxed">
+            Every piece is created with environmental consciousness, using sustainable materials and ethical practices.
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-sm bg-white/50 blur-40">
+          <h3 class="font-display text-xl mb-4">Quality</h3>
+          <p class="font-sans text-sm leading-relaxed">
+            We prioritize exceptional craftsmanship and attention to detail in every garment we produce.
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-sm bg-white/50 blur-40">
+          <h3 class="font-display text-xl mb-4">Timelessness</h3>
+          <p class="font-sans text-sm leading-relaxed">
+            Our designs transcend trends, focusing on classic silhouettes that stand the test of time.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

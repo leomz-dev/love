@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="MINIM - Elegant Clothing">
+  <main>
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070" 
+          alt="Hero fashion" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 bg-minim-charcoal/20"></div>
+      <div class="relative z-10 text-center text-white">
+        <h1 class="font-display text-5xl md:text-8xl mb-6">Timeless Elegance</h1>
+        <p class="font-sans text-lg tracking-widest mb-8">FALL COLLECTION 2024</p>
+        <a href="/collections" class="inline-block border bg-white border-white px-8 py-3 text-sm text-minim-charcoal tracking-widest hover:bg-transparent hover:text-white transition-colors">
+          EXPLORE
+        </a>        
+        <a href="/about" class="inline-block border border-white px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-minim-charcoal transition-colors mt-4">About</a>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl mb-4">Our Philosophy</h2>
+        <p class="font-sans text-lg max-w-2xl mx-auto">
+          At Minim, we believe in the power of simplicity. Each piece is thoughtfully crafted to embody timeless elegance and sophisticated design.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="aspect-[3/4] relative group overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1020" 
+            alt="Collection preview" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-minim-charcoal/0 group-hover:bg-minim-charcoal/20 transition-colors duration-300"></div>
+        </div>
+        <div class="aspect-[3/4] relative group overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=987" 
+            alt="Collection preview" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-minim-charcoal/0 group-hover:bg-minim-charcoal/20 transition-colors duration-300"></div>
+        </div>
+        <div class="aspect-[3/4] relative group overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=987" 
+            alt="Collection preview" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-minim-charcoal/0 group-hover:bg-minim-charcoal/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl flex flex-col justify-center items-center mt-16">
+        <h2 class="font-display text-4xl mb-4">Visit our gallery</h2>
+        <p class="font-sans text-center text-lg max-w-2xl mx-auto mb-4">See the art of photography with the MiniM top models</p>
+        <a href="/gallery" class="px-4 py-3 bg-minim-charcoal text-white text-sm tracking-widest hover:bg-minim-stone transition-colors">
+          VISIT GALLERY</a>
+      </div>
+    </section>
+
+    <section class="bg-minim-sand">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <h2 class="font-display text-4xl mb-8">Newsletter</h2>
+          <p class="font-sans text-lg mb-8 max-w-xl mx-auto">
+            Subscribe to receive updates about new collections and exclusive offers.
+          </p>
+          <form class="max-w-md mx-auto">
+            <div class="flex gap-4">
+              <input 
+                type="email" 
+                placeholder="Your email address" 
+                class="flex-1 px-4 py-3 bg-white border border-minim-stone/20 focus:outline-none focus:border-minim-stone"
+              />
+              <button 
+                type="submit" 
+                class="px-4 py-3 bg-minim-charcoal text-white text-sm tracking-widest hover:bg-minim-stone transition-colors"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

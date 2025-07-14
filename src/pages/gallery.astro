@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const images = [
+  "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=987",
+  "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=987",
+  "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=987",
+  "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=987",
+  "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=987",
+  "https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=987",
+  "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=987",
+  "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=987",
+];
+---
+
+<Layout title="Gallery - MINIM">
+  <main>
+    <PageHeader 
+      title="Gallery" 
+      subtitle="A visual journey through our collections and inspirations"
+    />
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {images.map((image, index) => (
+          <div class={`relative aspect-square group overflow-hidden ${
+            index === 3 || index === 4 ? "md:col-span-2" : ""
+          }`}>
+            <img 
+              src={image}
+              alt="Gallery image"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-minim-charcoal/0 group-hover:bg-minim-charcoal/20 transition-colors duration-300"></div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,38 @@
+---
+interface Props {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+}
+
+const { id, name, price, image, category } = Astro.props;
+---
+
+<div class="group">
+  <div class="aspect-[4/5] relative overflow-hidden mb-2">
+    <img 
+      src={image} 
+      alt={name}
+      class="w-full h-full rounded-md object-cover transition-transform duration-700 group-hover:scale-105"
+    />
+    <div class="absolute inset-0 bg-minim-charcoal/0 group-hover:bg-minim-charcoal/20 transition-colors duration-300"></div>
+  </div>
+  <div class="text-center mb-3 backdrop-blur-lg bg-white/50 rounded-md p-3">
+    
+    <div class="flex flex-row items-center justify-between gap-5">
+      <h3 class="font-display text-base font-semibold text-lg">{name}</h3>
+      <p class="font-sans font-medium text-sm ">${price}</p>
+    </div>
+
+    <div class=" flex justify-between items-center">
+      <p class="font-sans text-xs tracking-widest font-medium text-minim-stone/60">{category}</p>
+          
+      <a href="" class="font-sans text-sm decoration-solid text-minim-charcoal/60 hover:text-minim-charcoal transition-colors">
+        Learn more
+      </a>
+    </div>
+    
+  </div>
+</div>
