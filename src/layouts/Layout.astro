@@ -11,10 +11,12 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Minim - Elegant Clothing Store" />
+    <meta name="description" content="Love of my life" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -22,36 +24,15 @@ const { title } = Astro.props;
     <nav class="fixed w-full bg-minim-cream/90 backdrop-blur-sm z-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <a href="/" class="font-display text-3xl tracking-wider">MiniM</a>
+          <a href="/" class="font-display text-3xl tracking-wider">Hellen</a>
           <div class="hidden md:flex space-x-8 font-sans text-sm tracking-widest">
-            <a href="/collections" class="hover:text-minim-charcoal transition-colors">COLLECTIONS</a>
-            <a href="/about" class="hover:text-minim-charcoal transition-colors">ABOUT</a>
-            <a href="/gallery" class="hover:text-minim-charcoal transition-colors">GALLERY</a>
+            <a href="/collections" class="hover:text-minim-charcoal transition-colors">cards</a>
+            <a href="/about" class="hover:text-minim-charcoal transition-colors">Nosotros</a>
+            <a href="/gallery" class="hover:text-minim-charcoal transition-colors">Galeria</a>
           </div>
         </div>
       </div>
     </nav>
     <slot />
-    <footer class="bg-minim-sand mt-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 class="font-display text-xl mb-4">Visit Us</h3>
-            <p class="font-sans text-sm">123 Fashion Avenue<br/>New York, NY 10001</p>
-          </div>
-          <div>
-            <h3 class="font-display text-xl mb-4">Contact</h3>
-            <p class="font-sans text-sm">contact@minim.com<br/>+1 (555) 123-4567</p>
-          </div>
-          <div>
-            <h3 class="font-display text-xl mb-4">Follow Us</h3>
-            <div class="font-sans text-sm space-y-2">
-              <a href="#" class="block hover:text-minim-charcoal transition-colors">Instagram</a>
-              <a href="#" class="block hover:text-minim-charcoal transition-colors">Pinterest</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

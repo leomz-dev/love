@@ -1,76 +1,53 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageHeader from '../components/PageHeader.astro';
+import img from '../assets/heroimg.png'
 ---
 
-<Layout title="About - MINIM">
+<Layout title="Nuestra historia">
   <main>
     <PageHeader 
-      title="Our Story" 
-      subtitle="A journey through elegance and sustainable fashion"
+      title="Nuestra historia." 
+      subtitle="Hasta la fecha es algo extendida, tratare de ser breve sin omitir lo importante..."
     />
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div class="relative aspect-[4/5]">
           <img 
-            src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=987"
+            src={img.src}
             alt="Atelier"
             class="w-full h-full object-cover"
           />
         </div>
         <div class="space-y-6">
-          <h2 class="font-display text-3xl">Crafting Timeless Pieces</h2>
+          <h2 class="font-display text-3xl">Nuestro contrato eterno.</h2>
           <p class="font-sans leading-relaxed">
-            Founded in 2020, MINIM was born from a passion for minimalist design and sustainable fashion. Our commitment to quality craftsmanship and ethical production sets us apart in the industry.
+            Nos conocimos en octavo, y, siendo sincero, no fue de la mejor manera. Incluso me atrevería a decir que fue por error… o quizás por destino. Cada quien vivía su vida, con sus propios caminos, sin siquiera saber que el otro existía. Ambos teníamos pareja. Pero un día, tratando de hablar con una amiga tuya —que curiosamente se llamaba parecido— terminé escribiéndote por equivocación. Y ahí fue cuando te conocí.
           </p>
           <p class="font-sans leading-relaxed">
-            Each piece in our collection is thoughtfully designed and meticulously crafted using the finest materials, ensuring both longevity and style that transcends seasons.
+            Al principio solo quería tu ayuda con esa amiga… pero mientras hablábamos, mientras te iba conociendo, empecé a darme cuenta de algo más: me estaba enamorando de ti. De a poco, con cada palabra, con cada conversación, dejé de pensar en otra persona. Ya no quería a nadie más que no fueras tú. Y lo más bonito es que sentía que tú también pensabas lo mismo.
           </p>
-          <div class="grid grid-cols-3 gap-8 pt-8">
-            <div>
-              <p class="font-display text-3xl mb-2">50+</p>
-              <p class="font-sans text-sm">Artisan Partners</p>
-            </div>
-            <div>
-              <p class="font-display text-3xl mb-2">100%</p>
-              <p class="font-sans text-sm">Sustainable Materials</p>
-            </div>
-            <div>
-              <p class="font-display text-3xl mb-2">12</p>
-              <p class="font-sans text-sm">Collections</p>
-            </div>
-          </div>
+          <p class="font-sans leading-relaxed">
+            Con todos esos sentimientos encontrados, tomé una decisión difícil: terminar la relación que tenía en ese momento. Y a los pocos días, tú hiciste lo mismo. Tiempo después, tú y yo nos convertimos en pareja. En ese momento, sin saberlo, firmé un contrato contigo. Uno que pensé que sería breve, pero que con el tiempo se convirtió en algo que deseo que no termine jamás.
+          </p>
         </div>
       </div>
     </section>
-
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-      <div class="text-center max-w-2xl mx-auto">
-        <h2 class="font-display text-3xl mb-6">Our Values</h2>
-        <p class="font-sans mb-16">
-          We believe in creating fashion that respects both people and planet, without compromising on style.
+    <section class="max-w-7xl mt-4 mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-left mx-auto">
+        <p class="font-sans leading-relaxed">
+          Contigo he aprendido tantas cosas… y tú también has aprendido muchas a mi lado. Fuimos nuestras primeras veces en muchos sentidos, y aunque ahora veamos algunas cosas del pasado como "raras", en su momento fueron pura felicidad.
         </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="text-center p-8 rounded-sm bg-white/50 blur-40">
-          <h3 class="font-display text-xl mb-4">Sustainability</h3>
-          <p class="font-sans text-sm leading-relaxed">
-            Every piece is created with environmental consciousness, using sustainable materials and ethical practices.
-          </p>
-        </div>
-        <div class="text-center p-8 rounded-sm bg-white/50 blur-40">
-          <h3 class="font-display text-xl mb-4">Quality</h3>
-          <p class="font-sans text-sm leading-relaxed">
-            We prioritize exceptional craftsmanship and attention to detail in every garment we produce.
-          </p>
-        </div>
-        <div class="text-center p-8 rounded-sm bg-white/50 blur-40">
-          <h3 class="font-display text-xl mb-4">Timelessness</h3>
-          <p class="font-sans text-sm leading-relaxed">
-            Our designs transcend trends, focusing on classic silhouettes that stand the test of time.
-          </p>
-        </div>
+        <p class="font-sans leading-relaxed">
+          Pero, como suele pasar, la felicidad a veces viene con su precio. Todo entre nosotros era hermoso… menos el entorno. Tus padres no aprobaron nuestra relación, y cuando lo supieron, intentaron alejarme. Yo quise resistir, pero llegó un punto donde ya no pude con tanta presión… y me alejé. Pensé que ahí se acababa todo.
+        </p>
+        <p class="font-sans leading-relaxed">
+          El tiempo pasó, y volvimos a hablar, por temas académicos. Pero ya sabes lo que dicen: “donde hubo fuego, cenizas quedan”. Lo nuestro nunca se apagó, y esa chispa que siempre hemos tenido renació con fuerza. Decidimos volver, esta vez con discreción, para no tener problemas. Todo marchaba bien, pero esta vez fui yo quien empezó a cargar con problemas en casa. Necesité espacio. Cometí errores por inmadurez, errores de los que me arrepiento y por los que cada día intento compensarte con amor.
+        </p>
+        <p class="font-sans leading-relaxed">
+          Y aquí estamos, en 2025, intentándolo una vez más. A pesar de todo, seguimos juntos. Porque contigo siento lo que no siento con nadie más. Porque te amo como eres. Porque quiero seguir creciendo a tu lado, mejorando, soñando contigo y caminando este camino que aún tiene mucho por darnos… hasta donde el destino lo permita.
+        </p>
       </div>
     </section>
   </main>

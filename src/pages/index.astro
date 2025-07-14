@@ -1,40 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import heroImage from '../assets/heroimg.png';
+import img1 from '../assets/img_1.jpg'
+import img2 from '../assets/img_3.jpg'
+import img3 from '../assets/img_5.jpg'
 ---
 
-<Layout title="MINIM - Elegant Clothing">
+<Layout title="Hellen.">
   <main>
     <section class="h-screen flex items-center justify-center relative overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070" 
+          src={heroImage.src}
           alt="Hero fashion" 
           class="w-full h-full object-cover"
         />
       </div>
-      <div class="absolute inset-0 bg-minim-charcoal/20"></div>
+      <div class="absolute inset-0"></div>
       <div class="relative z-10 text-center text-white">
-        <h1 class="font-display text-5xl md:text-8xl mb-6">Timeless Elegance</h1>
-        <p class="font-sans text-lg tracking-widest mb-8">FALL COLLECTION 2024</p>
-        <a href="/collections" class="inline-block border bg-white border-white px-8 py-3 text-sm text-minim-charcoal tracking-widest hover:bg-transparent hover:text-white transition-colors">
-          EXPLORE
-        </a>        
-        <a href="/about" class="inline-block border border-white px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-minim-charcoal transition-colors mt-4">About</a>
+        <h1 class="font-display text-5xl md:text-8xl">Hellen</h1>
+        <p class="font-sans text-lg tracking-widest">La mujer de mi vida.</p>
       </div>
     </section>
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div class="text-center mb-16">
-        <h2 class="font-display text-4xl mb-4">Our Philosophy</h2>
-        <p class="font-sans text-lg max-w-2xl mx-auto">
-          At Minim, we believe in the power of simplicity. Each piece is thoughtfully crafted to embody timeless elegance and sophisticated design.
+        <h2 class="font-display text-4xl mb-4">Mi niña linda</h2>
+        <p class="font-sans mb-16 text-lg max-w-2xl mx-auto">
+          Eres tan linda como ese momento en el que el sol se esconde lentamente y todo parece perfecto, como una canción que no quiero dejar de escuchar, porque en cada nota me haces sentir en casa. Eres como un sueño del que no quiero despertar, porque la realidad a tu lado supera cualquier fantasía. Tan linda como cuando el cielo se pinta de colores después de una tormenta, recordándome que lo mejor siempre llega contigo. Eres como la risa de un pequeño: genuina, contagiosa y capaz de sanar todo a su alrededor. Tan hermosa como el primer ‘te amo’ que no se dice con la boca, sino con la mirada. Contigo me siento tan feliz, que hasta el tiempo se detiene a verte, y yo me pierdo feliz en ese instante eterno.
         </p>
+
+        
+        <a href="/about" class="px-4 py-3 bg-minim-charcoal text-white text-sm tracking-widest hover:bg-minim-stone transition-colors">
+          Nuestra historia.</a>
+        
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="aspect-[3/4] relative group overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1020" 
+            src={img1.src}
             alt="Collection preview" 
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -42,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="aspect-[3/4] relative group overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=987" 
+            src={img2.src}
             alt="Collection preview" 
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -50,7 +55,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="aspect-[3/4] relative group overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=987" 
+            src={img3.src}
             alt="Collection preview" 
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -59,36 +64,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="max-w-7xl flex flex-col justify-center items-center mt-16">
-        <h2 class="font-display text-4xl mb-4">Visit our gallery</h2>
-        <p class="font-sans text-center text-lg max-w-2xl mx-auto mb-4">See the art of photography with the MiniM top models</p>
+        <h2 class="font-display text-6xl mb-4">Sofi</h2>
+        <p class="font-sans text-center text-lg max-w-2xl mx-auto mb-4">Un camara jamas sera suficiente para captar cuanta belleza hay en tí. Sin embargo hace su meyor esfuerzo.</p>
         <a href="/gallery" class="px-4 py-3 bg-minim-charcoal text-white text-sm tracking-widest hover:bg-minim-stone transition-colors">
-          VISIT GALLERY</a>
-      </div>
-    </section>
-
-    <section class="bg-minim-sand">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="text-center">
-          <h2 class="font-display text-4xl mb-8">Newsletter</h2>
-          <p class="font-sans text-lg mb-8 max-w-xl mx-auto">
-            Subscribe to receive updates about new collections and exclusive offers.
-          </p>
-          <form class="max-w-md mx-auto">
-            <div class="flex gap-4">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                class="flex-1 px-4 py-3 bg-white border border-minim-stone/20 focus:outline-none focus:border-minim-stone"
-              />
-              <button 
-                type="submit" 
-                class="px-4 py-3 bg-minim-charcoal text-white text-sm tracking-widest hover:bg-minim-stone transition-colors"
-              >
-                SUBSCRIBE
-              </button>
-            </div>
-          </form>
-        </div>
+          Galeria</a>
       </div>
     </section>
   </main>
